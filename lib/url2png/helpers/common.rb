@@ -11,7 +11,7 @@ module Url2png
         # parse size
         dim = Url2png::Dimensions.parse(options)
 
-        # ensure image alt 
+        # ensure image alt
         alt = options.key?(:alt) ? options.delete(:alt) : url
 
         # build image tag
@@ -62,7 +62,7 @@ module Url2png
           fPjwfwYgYAIRIAAAMrgDTJyW2igAAAAASUVORK5CYII='.gsub(/\n/,'')
 
         when 'placehold'
-          "http://placehold.it/#{ dim[:size] }"
+          "http://placehold.it/#{ dim[:size] }.png"
 
         else
           # build parameters portion of URL
@@ -195,7 +195,7 @@ module Url2png
 
         # filter out unavailable options
         options = options.select do |key, value|
-          if options_available.include? key 
+          if options_available.include? key
             true
           else
             # size is a special option, only usable in the gem

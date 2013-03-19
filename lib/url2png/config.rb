@@ -14,6 +14,8 @@ module Url2png
     self.mode = c[:mode] if c[:mode]
     self.api_version = c[:api_version] if c[:api_version]
     self.api_url = c[:api_url] if c[:api_url]
+
+    self.default_size = c[:default_size] if c[:default_size]
   end
 
   def api_key=api_key

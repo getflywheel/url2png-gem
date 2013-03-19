@@ -17,11 +17,9 @@ Gem::Specification.new do |s|
     "README.markdown"
   ]
   s.files = [
-    ".DS_Store",
     ".document",
     ".rspec",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.markdown",
     "Rakefile",
